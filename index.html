@@ -1,0 +1,200 @@
+<title>PetMeta Gizlilik Politikası</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: tek sütunlu hukuki belge; üstte dil atlama çubuğu, altta TR ve EN bölümleri art arda. */
+:root {
+  --bg: #f5f8fc;
+  --surface: #ffffff;
+  --fg: #14243a;
+  --muted: #55667d;
+  --line: #d8e2ee;
+  --accent: #0a5db5;
+  --accent-soft: #e3effc;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1626; --surface: #121f33; --fg: #e6edf7; --muted: #9aaac0;
+    --line: #243653; --accent: #6db3ff; --accent-soft: #162b47; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1626; --surface: #121f33; --fg: #e6edf7; --muted: #9aaac0;
+  --line: #243653; --accent: #6db3ff; --accent-soft: #162b47; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font: 400 17px/1.65 var(--font-body);
+  padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 760px; margin: 0 auto; }
+header.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.brand { font: 700 20px var(--font-display); letter-spacing: -0.01em; }
+nav.lang { display: flex; gap: 8px; }
+nav.lang a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); text-decoration: none; font-weight: 600; background: var(--surface); }
+nav.lang a:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+section.doc { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px clamp(18px, 4vw, 36px); margin-bottom: 28px; min-width: 0; }
+h1 { font: 700 clamp(28px, 6vw, 38px)/1.15 var(--font-display); letter-spacing: -0.02em; margin: 0 0 6px; text-wrap: balance; }
+h2 { font: 600 20px/1.3 var(--font-display); margin: 30px 0 8px; text-wrap: balance; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+.meta { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+.callout { background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+.tablebox { overflow-x: auto; margin: 10px 0 14px; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15.5px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 13.5px; letter-spacing: 0.04em; text-transform: uppercase; }
+a { color: var(--accent); }
+.mail { font-weight: 600; user-select: all; }
+footer { color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">PetMeta</div>
+    <nav class="lang" aria-label="Dil / Language">
+      <a href="#tr">Türkçe</a>
+      <a href="#en">English</a>
+    </nav>
+  </header>
+
+  <!-- ============================ TÜRKÇE ============================ -->
+  <section class="doc" id="tr" lang="tr">
+    <h1>PetMeta Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 28 Ekim 2026 · Geliştirici: @aykutsen1987</p>
+
+    <p>PetMeta, evcil hayvan bakımını takip etmenizi sağlayan bir Android uygulamasıdır. Bu politika, hangi verilerin işlendiğini, nerede tutulduğunu ve haklarınızın neler olduğunu açıklar. Kısaca: <strong>hesap yoktur, verileriniz telefonunuzda kalır</strong>; yalnızca yapay zekâ analizi için seçtiğiniz fotoğraf ve reklamlar için gereken bilgiler cihazdan çıkar.</p>
+
+    <h2>1. Veri sorumlusu ve iletişim</h2>
+    <p>Geliştirici: <strong>@aykutsen1987</strong><br>E-posta: <span class="mail">aykutsen1987@gmail.com</span></p>
+
+    <h2>2. Cihazınızda tutulan veriler</h2>
+    <p>Hayvan profilleri, aşı, ilaç ve veteriner kayıtları, mama/su/egzersiz/kilo günlükleri, fotoğraflar, notlar ve hatırlatmalar <strong>yalnızca cihazınızdaki şifreli veritabanında</strong> saklanır. Uygulama için kayıt, giriş veya hesap gerekmez; bu veriler geliştiriciye veya bir sunucuya gönderilmez. Android yedeklemesi bu veriler için kapalıdır.</p>
+
+    <h2>3. Yapay zekâ fotoğraf analizi</h2>
+    <p>Bu özelliği kullanmadan önce açık onayınız istenir. Analiz için şu bilgiler gönderilir:</p>
+    <ul>
+      <li>Seçtiğiniz veya çektiğiniz fotoğraf (küçültülmüş ve sıkıştırılmış halde),</li>
+      <li>Hayvanın türü (ör. kedi, köpek) ve dahili bir hayvan numarası.</li>
+    </ul>
+    <p>Veriler şifreli bağlantı (HTTPS) ile PetMeta'nın analiz sunucusuna (Render üzerinde barındırılır) ve oradan yapay zekâ hizmet sağlayıcısına (Groq) iletilir. Fotoğraf ve sonuç sunucuda <strong>saklanmaz</strong>; sonuç yalnızca cihazınızda tutulur. Kötüye kullanımı önlemek için günlük istek sayısı, IP adresinize bağlı olarak kısa süreli bellekte sayılır ve kalıcı kaydedilmez. Barındırma sağlayıcısı kendi güvenlik kayıtlarında IP adresini tutabilir.</p>
+    <div class="callout"><strong>Önemli:</strong> Analiz sonuçları bilgilendirme amaçlı ön değerlendirmedir; teşhis değildir ve veteriner muayenesinin yerini tutmaz.</div>
+
+    <h2>4. Reklamlar</h2>
+    <p>PetMeta, Unity LevelPlay reklam platformu ile banner ve geçiş reklamları gösterir. Reklam hizmeti ve reklam ortakları şu bilgileri işleyebilir: Google reklam kimliği (GAID), IP adresi, yaklaşık konum (IP'den), cihaz modeli ve sürümü, uygulama sürümü, reklam gösterim ve tıklama bilgileri. Reklam kimliğini sıfırlamak veya reklam kişiselleştirmesini kapatmak için: Android <em>Ayarlar → Google → Reklamlar</em>. Reklam ortaklarının veri işleme koşulları kendi gizlilik politikalarına tabidir.</p>
+
+    <h2>5. İzinler</h2>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>İzin</th><th>Neden</th></tr></thead>
+        <tbody>
+          <tr><td>Kamera</td><td>Analiz için fotoğraf çekmek. İsteğe bağlıdır.</td></tr>
+          <tr><td>Bildirimler</td><td>Aşı ve ilaç hatırlatmaları.</td></tr>
+          <tr><td>Kesin alarm</td><td>Hatırlatmaların zamanında çalması.</td></tr>
+          <tr><td>Biyometrik doğrulama</td><td>İsteğe bağlı uygulama kilidi. Parmak izi/yüz verisi uygulamaya verilmez; doğrulamayı Android yapar.</td></tr>
+          <tr><td>İnternet / ağ durumu</td><td>Yapay zekâ analizi ve reklamlar.</td></tr>
+          <tr><td>Reklam kimliği</td><td>Reklam gösterimi.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Galeriden fotoğraf seçimi Android'in sistem fotoğraf seçicisiyle yapılır; uygulama galerinize genel erişim istemez. Yalnızca seçtiğiniz fotoğraflar uygulamaya verilir.</p>
+
+    <h2>6. Uygulama kilidi</h2>
+    <p>Kilidi açarsanız PIN'iniz cihazda şifrelenmiş olarak saklanır ve hiçbir yere gönderilmez.</p>
+
+    <h2>7. Dışa aktarma ve paylaşma</h2>
+    <p>PDF/CSV dışa aktarma ve fotoğraf paylaşımı sizin başlattığınız işlemlerdir. Dosya, yalnızca sizin seçtiğiniz uygulamaya veya kişiye iletilir.</p>
+
+    <h2>8. Saklama ve silme</h2>
+    <p>Verileriniz cihazınızdadır; hayvan kayıtlarını uygulama içinden silebilir veya uygulamayı kaldırarak tüm verileri silebilirsiniz. Sunucuda saklanan kullanıcı verisi olmadığı için ayrıca silinecek bir hesap yoktur. Uygulamayı kaldırmadan önce verilerinizi dışa aktarmanızı öneririz; yedekleme kapalı olduğundan silinen veriler geri getirilemez.</p>
+
+    <h2>9. Güvenlik</h2>
+    <p>Yerel veritabanı şifrelidir (SQLCipher), PIN şifreli depoda tutulur, sunucu iletişimi HTTPS iledir. Hiçbir yöntem %100 güvenlik garantisi veremez.</p>
+
+    <h2>10. Çocuklar</h2>
+    <p>PetMeta 13 yaş altındaki çocuklara yönelik değildir ve onlardan bilerek kişisel veri toplamaz.</p>
+
+    <h2>11. Haklarınız</h2>
+    <p>Verileriniz sizde olduğundan çoğu işlemi (görüntüleme, düzeltme, silme, dışa aktarma) doğrudan uygulamadan yapabilirsiniz. KVKK ve GDPR kapsamındaki bilgi, erişim, düzeltme, silme ve itiraz taleplerinizi yukarıdaki e-posta adresine iletebilirsiniz.</p>
+
+    <h2>12. Değişiklikler</h2>
+    <p>Bu politika güncellenebilir. Güncel sürüm bu sayfada yayımlanır ve en üstteki tarih değişir.</p>
+
+    <h2>13. İletişim</h2>
+    <p>Sorularınız için: <span class="mail">aykutsen1987@gmail.com</span></p>
+  </section>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section class="doc" id="en" lang="en">
+    <h1>PetMeta Privacy Policy</h1>
+    <p class="meta">Last updated: October 28, 2026 · Developer: @aykutsen1987</p>
+
+    <p>PetMeta is an Android app for tracking your pet's care. This policy explains what data is processed, where it lives, and what rights you have. In short: <strong>there are no accounts and your data stays on your phone</strong>. Only the photo you choose for AI analysis and the information needed to show ads leave the device.</p>
+
+    <h2>1. Controller and contact</h2>
+    <p>Developer: <strong>@aykutsen1987</strong><br>Email: <span class="mail">aykutsen1987@gmail.com</span></p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>Pet profiles, vaccine, medicine and vet records, food/water/exercise/weight logs, photos, notes and reminders are stored <strong>only in an encrypted database on your device</strong>. The app needs no sign-up, login or account, and this data is not sent to the developer or to any server. Android backup is turned off for this data.</p>
+
+    <h2>3. AI photo analysis</h2>
+    <p>We ask for your explicit consent before you use this feature. For an analysis, the app sends:</p>
+    <ul>
+      <li>The photo you pick or take (downscaled and compressed),</li>
+      <li>The pet's species (for example cat or dog) and an internal pet number.</li>
+    </ul>
+    <p>The data travels over an encrypted connection (HTTPS) to PetMeta's analysis server (hosted on Render) and from there to the AI provider (Groq). The photo and the result are <strong>not stored</strong> on the server; the result is kept only on your device. To prevent abuse, the number of daily requests is counted briefly in memory against your IP address and is not saved permanently. The hosting provider may keep IP addresses in its own security logs.</p>
+    <div class="callout"><strong>Important:</strong> Analysis results are an informational pre-assessment. They are not a diagnosis and do not replace a veterinary examination.</div>
+
+    <h2>4. Advertising</h2>
+    <p>PetMeta shows banner and interstitial ads through the Unity LevelPlay ad platform. The ad service and its ad partners may process: the Google advertising ID (GAID), IP address, approximate location (from IP), device model and OS version, app version, and ad impression and click data. To reset your advertising ID or turn off ad personalization, go to Android <em>Settings → Google → Ads</em>. Ad partners process data under their own privacy policies.</p>
+
+    <h2>5. Permissions</h2>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Camera</td><td>To take a photo for analysis. Optional.</td></tr>
+          <tr><td>Notifications</td><td>Vaccine and medicine reminders.</td></tr>
+          <tr><td>Exact alarms</td><td>So reminders fire on time.</td></tr>
+          <tr><td>Biometric authentication</td><td>Optional app lock. The app never receives your fingerprint or face data; Android performs the check.</td></tr>
+          <tr><td>Internet / network state</td><td>AI analysis and ads.</td></tr>
+          <tr><td>Advertising ID</td><td>Serving ads.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Choosing photos from your gallery uses Android's system photo picker. The app does not request broad access to your gallery; it only receives the photos you select.</p>
+
+    <h2>6. App lock</h2>
+    <p>If you turn on the lock, your PIN is stored encrypted on the device and is never sent anywhere.</p>
+
+    <h2>7. Export and sharing</h2>
+    <p>PDF/CSV export and photo sharing are actions you start. The file goes only to the app or person you choose.</p>
+
+    <h2>8. Retention and deletion</h2>
+    <p>Your data is on your device. You can delete pet records inside the app, or delete everything by uninstalling the app. Because no user data is stored on a server, there is no account to delete. Export your data before uninstalling: backup is off, so deleted data cannot be recovered.</p>
+
+    <h2>9. Security</h2>
+    <p>The local database is encrypted (SQLCipher), the PIN is kept in encrypted storage, and server traffic uses HTTPS. No method can guarantee 100% security.</p>
+
+    <h2>10. Children</h2>
+    <p>PetMeta is not directed to children under 13 and does not knowingly collect personal data from them.</p>
+
+    <h2>11. Your rights</h2>
+    <p>Because your data is with you, you can view, correct, delete and export most of it directly in the app. For information, access, correction, deletion or objection requests under GDPR or Turkey's KVKK, email the address above.</p>
+
+    <h2>12. Changes</h2>
+    <p>We may update this policy. The current version is published on this page and the date at the top changes.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions: <span class="mail">aykutsen1987@gmail.com</span></p>
+  </section>
+
+  <footer>© 2026 @aykutsen1987 · PetMeta</footer>
+</div>
